@@ -27,8 +27,8 @@ jobs:
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AKIA2VLJ2JN2A3CQ5K4O }}
-          aws-secret-access-key: ${{ secrets.aRmOo4f4QlgXLvhwL8cG1finfAZTPRvvffs69MWQ }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
       - name: Upload to S3
